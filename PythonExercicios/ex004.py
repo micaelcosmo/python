@@ -1,0 +1,7 @@
+n = input('Digite algo: ')
+print('O tipo primitivo desse valor é {}'.format(type(n)))
+print('É alfanumérico? {}. É um character especial? {}. É imprimível? {}.'.format(n.isalnum(),n.isascii(),n.isprintable()))
+print('É alfabético? {}. É decimal? {}. É apenas números? {}.'.format(n.isalpha(),n.isdecimal(),n.isdigit()))
+print('É um número? {}. Só tem espaços? {}. Está capitalizada? {}.'.format(n.isnumeric(),n.isspace(),n.istitle()))
+print('Está em minúsculas? {}. Está em maiúsculas? {}.'.format(n.islower(),n.isupper()))
+#print('isalnum, isalpha, isascii, isalpha, isdecimal, isdigit, isidentifier, islower, isupper, isnumeric, isspace, istitle')
