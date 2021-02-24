@@ -1,6 +1,6 @@
-retaUm = int(input('Valor da primeira reta: '))
-retaDois = int(input('Valor da segunda reta: '))
-retaTres = int(input('Valor da terceira reta: '))
+retaUm = float(input('Valor da primeira reta: '))
+retaDois = float(input('Valor da segunda reta: '))
+retaTres = float(input('Valor da terceira reta: '))
 
 umDois = retaUm+retaDois
 umTres = retaUm+retaTres
