@@ -6,10 +6,10 @@ octal = escolha == 2
 hexadecimal = escolha == 3
 
 if binario:
-    resultado = format(int(bin(numero), 2), 'b')
+    resultado = format(bin(numero)[2:])
 elif octal:
-    resultado = format(int(oct(numero), 8), 'o')
+    resultado = format(oct(numero)[2:])
 elif hexadecimal:
-    resultado = format(int(hex(numero), 16), 'x')
+    resultado = format(hex(numero)[2:])
 
 print(resultado)
