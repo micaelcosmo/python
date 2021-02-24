@@ -8,9 +8,9 @@ divisivel4 = ano % 4
 divisivel100 = ano % 100
 
 if divisivel400 == 0:
-    print('Esse ano {} é bissexto.'.format(ano))
+    print('Esse ano \033[33m{}\033[m é bissexto.'.format(ano))
 else:
     if divisivel4 == 0 and divisivel100 != 0:
-        print('Esse ano {} é bissexto.'.format(ano))
+        print('Esse ano \033[35m{}\033[m é bissexto.'.format(ano))
     else:
-        print('Esse ano {} não é bissexto'.format(ano))
+        print('Esse ano \033[7;37m{}\033[m não é bissexto'.format(ano))
