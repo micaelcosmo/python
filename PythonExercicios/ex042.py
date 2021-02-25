@@ -12,7 +12,6 @@ difDoisTres = retaDois-retaTres
 
 equilatero = retaUm == retaDois == retaTres
 isosceles = retaUm == retaDois != retaTres or retaDois == retaTres != retaUm or retaTres == retaUm != retaDois
-escaleno = retaUm != retaDois and retaDois != retaTres and retaTres != retaUm
 
 possibilidadeRetaUm = retaUm < doisTres and retaUm > difDoisTres
 possibilidadeRetaDois = retaDois < umTres and retaDois > difUmTres
@@ -23,7 +22,7 @@ if possibilidadeRetaUm and possibilidadeRetaDois and possibilidadeRetaTres:
         resultado = 'Equilátero'
     elif isosceles:
         resultado = 'Isósceles'
-    elif escaleno:
+    else:
         resultado = 'Escaleno'
     print('É possível fazer um triângulo {} com essas retas.'.format(resultado))
 else:
