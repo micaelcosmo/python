@@ -11,11 +11,11 @@ idadeSenior = 25
 
 if idade <= idadeMirim:
     resultado = 'MIRIM'
-elif idade > idadeMirim and idade <= idadeInfantil:
+elif idade <= idadeInfantil:
     resultado = 'INFANTIL'
-elif idade > idadeInfantil and idade <= idadeJunior:
+elif idade <= idadeJunior:
     resultado = 'JUNIOR'
-elif idade > idadeJunior and idade <= idadeSenior:
+elif idade <= idadeSenior:
     resultado = 'SÊNIOR'
 else:
     resultado = 'MASTER'
