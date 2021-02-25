@@ -13,9 +13,9 @@ difDoisTres = retaDois-retaTres
 equilatero = retaUm == retaDois == retaTres
 isosceles = retaUm == retaDois != retaTres or retaDois == retaTres != retaUm or retaTres == retaUm != retaDois
 
-possibilidadeRetaUm = retaUm < doisTres and retaUm > difDoisTres
-possibilidadeRetaDois = retaDois < umTres and retaDois > difUmTres
-possibilidadeRetaTres = retaTres < umDois and retaTres > difUmDois
+possibilidadeRetaUm = doisTres > retaUm > difDoisTres
+possibilidadeRetaDois = umTres > retaDois > difUmTres
+possibilidadeRetaTres = umDois > retaTres > difUmDois
 
 if possibilidadeRetaUm and possibilidadeRetaDois and possibilidadeRetaTres:
     if equilatero:
