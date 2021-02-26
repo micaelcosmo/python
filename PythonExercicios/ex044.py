@@ -13,21 +13,21 @@ TRES_MAIS = 4
 DESCONTO_CINCO = 0.05
 DESCONTO_DEZ = 0.10
 JUROS_VINTE = 0.20
-aVistaDinChe = valorProduto - (valorProduto * DESCONTO_DEZ)
-aVistaCartao = valorProduto - (valorProduto * DESCONTO_CINCO)
-parcelaCartaoTres = valorProduto + (valorProduto * JUROS_VINTE)
 
 if formasPagamento == DINHEIRO_CHEQUE:
+    aVistaDinChe = valorProduto - (valorProduto * DESCONTO_DEZ)
     print('Sua compra de R${:.2f} vai custar R${:.2f} no final.'.format(valorProduto, aVistaDinChe))
     print('Você teve 10% de desconto.')
 elif formasPagamento == CARTAO:
+    aVistaCartao = valorProduto - (valorProduto * DESCONTO_CINCO)
     print('Sua compra de R${:.2f} vai custar R${:.2f} no final.'.format(valorProduto, aVistaCartao))
     print('Você teve 5% de desconto.')
 elif formasPagamento == DUAS_VEZES:
     resultado = valorProduto / 2
-    prEint('Sua compra será parcelada em 2x de R${:.2f} SEM JUROS'.format(resultado))
+    print('Sua compra será parcelada em 2x de R${:.2f} SEM JUROS'.format(resultado))
     print('Sua compra vai custar R${:.2f} no final.'.format(valorProduto))
 elif formasPagamento == TRES_MAIS:
+    parcelaCartaoTres = valorProduto + (valorProduto * JUROS_VINTE)
     xParcela = int(input('Quantas parcelas? '))
     resultado = parcelaCartaoTres / xParcela
     print('Com 20% de juros.')
