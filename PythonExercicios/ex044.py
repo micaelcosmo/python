@@ -10,12 +10,12 @@ DINHEIRO_CHEQUE = 1
 CARTAO = 2
 DUAS_VEZES = 3
 TRES_MAIS = 4
-descontoCinco = 0.05
-descontoDez = 0.10
-jurosVinte = 0.20
-aVistaDinChe = valorProduto - (valorProduto * descontoDez)
-aVistaCartao = valorProduto - (valorProduto * descontoCinco)
-parcelaCartaoTres = valorProduto + (valorProduto * jurosVinte)
+DESCONTO_CINCO = 0.05
+DESCONTO_DEZ = 0.10
+JUROS_VINTE = 0.20
+aVistaDinChe = valorProduto - (valorProduto * DESCONTO_DEZ)
+aVistaCartao = valorProduto - (valorProduto * DESCONTO_CINCO)
+parcelaCartaoTres = valorProduto + (valorProduto * JUROS_VINTE)
 
 if formasPagamento == DINHEIRO_CHEQUE:
     print('Sua compra de R${:.2f} vai custar R${:.2f} no final.'.format(valorProduto, aVistaDinChe))
