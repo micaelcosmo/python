@@ -20,4 +20,4 @@ media = somaIdade / QUANTIDADE_PESSOAS
 
 print("A idade média do grupo é de {:.0f} anos.".format(media))
 print("O mais velho do grupo se chama, {}.".format(maisVelho))
-print("Temos ao todo temos {} mulhere(s) no grupo com menos de 20 anos.".format(quantidadeMulheres))
+print("Temos ao todo {} mulhere(s) no grupo com menos de 20 anos.".format(quantidadeMulheres))
