@@ -1,26 +1,17 @@
 from datetime import date
 
+QUANTIDADE_PESSOAS = 7
 IDADE_BASE = 18
-SE_MAIOR = "Já atingiu a Maioridade."
-SE_MENOR = "Ainda não atingiu a Maioridade."
 anoAtual = date.today().year
 anoBase = anoAtual - IDADE_BASE
-datas = []
-maioridade = ""
-quantidade = []
+quantidadeMaioridade = 0
 
-for x in range(0, 7):
-    datas.append(int(input("Digite o ano de nascimento: ")))
-    for y in range(0, len(datas)):
-        if datas[y] <= anoBase:
-            maioridade = SE_MAIOR
-        else:
-            maioridade = SE_MENOR
-    quantidade.append(maioridade)
-    print(maioridade)
+for x in range(0, QUANTIDADE_PESSOAS):
+    data = int(input("Digite o ano de nascimento: "))
+    if data <= anoBase:
+        quantidadeMaioridade += 1
 
-quantidadeMaioridade = quantidade.count(SE_MAIOR)
-quantidadeMinoridade = quantidade.count(SE_MENOR)
+quantidadeMinoridade = QUANTIDADE_PESSOAS - quantidadeMaioridade
 
 print((":-" * 17) + ":")
 print("{} atingiram a maioridade.".format(quantidadeMaioridade))
