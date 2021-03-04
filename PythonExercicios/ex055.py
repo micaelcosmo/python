@@ -1,8 +1,6 @@
-import sys
-
 QUANTIDADE_PESSOAS = 5
 maior = 0
-menor = sys.maxsize
+menor = float('inf')
 
 for p in range(0, QUANTIDADE_PESSOAS):
     pesos = (float(input("Digite o peso em quilograma(kg): ")))
