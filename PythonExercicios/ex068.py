@@ -1,4 +1,3 @@
-'''Criar um programa que jogue par ou ímpar e só pare quando o jogador perder'''
 import random
 numero = numero_Computador = contador = total = 0
 resultado = jogador = par_Impar = ''
