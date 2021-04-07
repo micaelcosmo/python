@@ -3,6 +3,8 @@ numero = numero_Computador = contador = total = 0
 resultado = jogador = par_Impar = ''
 while True:
     escolha_Jogador = str(input('Par ou Ímpar? ->[P/I]<- '))
+    while escolha_Jogador not in 'PI':
+        escolha_Jogador = str(input('Par ou Ímpar? ->[P/I]<- '))
     numero = int(input('Digite um valor: '))
     numero_Computador = random.randint(1, 10)
     total = numero + numero_Computador
