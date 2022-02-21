@@ -1,0 +1,23 @@
+#Meu GitIgnore
+PythonExercicios/ex107/__init__.py
+PythonExercicios/ex107/moeda/__pycache__/
+PythonExercicios/ex107/__pycache__/
+PythonExercicios/ex108/__init__.py
+PythonExercicios/ex108/__pycache__/
+PythonExercicios/ex108/moeda/__pycache__/
+PythonExercicios/ex109/__init__.py
+PythonExercicios/ex109/__pycache__/
+PythonExercicios/ex109/moeda/__pycache__/
+PythonExercicios/ex110/__init__.py
+PythonExercicios/ex110/__pycache__/
+PythonExercicios/ex110/moeda/__pycache__/
+PythonExercicios/ex111Ex112/__init__.py
+PythonExercicios/ex111Ex112/__pycache__/
+PythonExercicios/ex111Ex112/moeda/__pycache__/
+PythonExercicios/ex111Ex112/dado/__pycache__/
+PythonExercicios/ex115/lib/interface/__pycache__/
+PythonExercicios/ex115/Curso_de_Python.txt
+PythonExercicios/ex115/lib/arquivo/__pycache__/
+PythonExercicios/teste.py.idea/misc.xml
+.idea/misc.xml
+.idea/
